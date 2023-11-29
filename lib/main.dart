@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +17,6 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSwatch(
           primarySwatch: Colors.deepPurple,
         ),
-        // useMaterial3 is not a valid property for ThemeData
       ),
       home: const MyHomePage(),
     );
@@ -32,8 +30,6 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-// ... (previous code)
-
 class _MyHomePageState extends State<MyHomePage> {
   String headerText = "";
   String footerText = "";
@@ -43,8 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    _image = File(
-        "path/to/initial/download.jpeg"); // Provide the initial image path here
+    _image = File("path/to/initial/download.jpeg");
   }
 
   @override
