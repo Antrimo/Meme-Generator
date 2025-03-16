@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:meme/screens/edit_screen.dart';
+import 'package:meme/screens/profile_screen.dart';
+import 'package:meme/screens/save_screen.dart';
 import '../widgets/bottom_nav_bar.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,10 +14,12 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
 
   int _selectedTab = 0;
+  
   final List<Widget> _screens = [
-    const Placeholder(),
-    const Placeholder(),
-    const Placeholder(),
+    const EditScreen(),
+    const SaveScreen(), 
+    const ProfileScreen(),
+    
   ];
 
   void _onTabChange(int index) {
@@ -27,9 +32,12 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _screens[_selectedTab],
-      bottomNavigationBar: BottomNavBar(
-        selectedIndex: _selectedTab,
-        onTabChange: _onTabChange,
+      bottomNavigationBar: Container(
+        color: Colors.black,
+        child: BottomNavBar(
+          selectedIndex: _selectedTab,
+          onTabChange: _onTabChange,
+        ),
       ),
     );
   }
