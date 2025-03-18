@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meme/screens/edit_screen.dart';
+import 'package:meme/screens/upload_screen.dart';
 import 'package:meme/screens/profile_screen.dart';
 import 'package:meme/screens/save_screen.dart';
 import '../widgets/bottom_nav_bar.dart';
@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   int _selectedTab = 0;
   
   final List<Widget> _screens = [
-    const EditScreen(),
+    const UploadScreen(),
     const SaveScreen(), 
     const ProfileScreen(),
     
