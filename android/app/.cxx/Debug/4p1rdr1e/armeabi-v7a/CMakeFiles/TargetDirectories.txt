@@ -1,0 +1,2 @@
+/home/kartikey/Meme-Generator/android/app/.cxx/Debug/4p1rdr1e/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/kartikey/Meme-Generator/android/app/.cxx/Debug/4p1rdr1e/armeabi-v7a/CMakeFiles/rebuild_cache.dir
